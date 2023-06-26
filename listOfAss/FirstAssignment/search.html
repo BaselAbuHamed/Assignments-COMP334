@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+    </head>
+    <body>
+        <h2>Search</h2>
+
+        <form method="post" action="http://comp334.studentswebprojects.ritaj.ps/util/process.php">
+            <fieldset>
+                <p>What topics are you searching:</p>
+
+                <input type="checkbox" id="discussions" name="option"
+                    value="discussions"required>
+                <label for="discussions">Relevant Discussions</label><br>
+
+                <input type="checkbox" id="resources" name="option"
+                    value="resources"required>
+                <label for="resources">Resources</label><br>
+
+                <input type="checkbox" id="experts" name="option"
+                    value="experts"required>
+                <label for="experts">Experts</label><br><br>
+
+                <p>Search about:</p>
+                <input type="text" id="search-input" placeholder="Enter keywords, phrases, or topics" required><br><br>
+
+                <button type="button">Search</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

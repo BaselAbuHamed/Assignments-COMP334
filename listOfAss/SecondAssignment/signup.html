@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Create Acount</h1>
+    <form method="POST" action="signup.php">
+        <fieldset>
+            <legend>Sign Up</legend>
+
+            <label for="first_name">First Name:</label><br>
+            <input type="text" id="first_name" name="first_name" required><br>
+
+            <label for="last_name">Last Name:</label><br>
+            <input type="text" id="last_name" name="last_name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <fieldset>
+                <legend>Gender</legend>
+
+                <input type="radio" id="gender_male" name="gender" value="m" required>
+                <label for="gender_male">Male</label>
+
+                <input type="radio" id="gender_female" name="gender" value="f" required>
+                <label for="gender_female">Female</label><br>
+
+            </fieldset>
+            
+            <label for="birthdate">Birthdate:</label><br>
+            <input type="date" id="birthdate" name="birthdate" required><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" minlength="8" required><br><br>
+            
+            <button type="submit">submit</button>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

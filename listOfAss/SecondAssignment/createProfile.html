@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+</head>
+
+<body>
+    <h1>Create Your Profile</h1>
+    <form method="POST" action="createProfile.php" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Profile Creation</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="photo">Photo (PNG, GIF, JPEG):</label><br>
+            <input type="file" id="photo" name="photo" accept=".png,.gif,.jpeg" required><br>
+            
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" required></textarea><br>
+
+            <label for="cv">CV (PDF):</label><br>
+            <input type="file" id="cv" name="cv" accept=".pdf" required><br>
+
+            <label for="area_of_experience">Area of Experience:</label><br>
+            <input type="text" id="area_of_experience" name="area_of_experience" required><br>
+
+            <label for="experience_level">Experience Level:</label><br>
+            <select id="experience_level" name="experience_level" required>
+
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="expert">Expert</option>
+            </select><br>
+
+            <label for="area_of_interest">Area of Interest:</label><br>
+            <input type="text" id="area_of_interest" name="area_of_interest" required><br><br>
+
+            <button type="submit">Save Profile</button>
+            <button>skip</button>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
